@@ -1,0 +1,4 @@
+#  what ever we want dependencies that we have to mention in requirements.txt file 
+requests
+pandas
+
