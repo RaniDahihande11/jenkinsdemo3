@@ -22,8 +22,11 @@ pipeline{
  
     stage('extract data'){
         steps{
-            bat "SET TOEKN-${env.APP_TOKEN}"
-            bat "${env.PYTHON} extract_data.py" // use "" 
+            bat """
+            SET TOEKN=%APP_TOKEN%
+            %PYTHON extract_data.py
+            """
+// if you want to write 2 or more command got for multiline string
 
             }
 
